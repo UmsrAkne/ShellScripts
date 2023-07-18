@@ -1,5 +1,7 @@
 #!/bin/sh
 
+mkdir -p histories
+
 dt="date : $(date '+%Y/%m/%d %H:%M:%S')"
 dtf="$(date '+%Y%m%d%H%M%S')"
 
@@ -12,8 +14,8 @@ echo ""
 echo "file list **" 
 
 echo ""
-ls --ignore={info*.txt,infoOutput.sh} -1 -lh
+ls --ignore={infoOutput.sh,histories} -1 -lh
 echo ""
 echo "--------------------------------------------------"
 echo ""
-} > "info_$dtf.txt"
+} > "histories/info_$dtf.txt"
