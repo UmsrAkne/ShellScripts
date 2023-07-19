@@ -14,7 +14,7 @@ echo ""
 echo "file list **" 
 
 echo ""
-ls --ignore={infoOutput.sh,histories} -1 -lh
+ls --ignore={infoOutput.sh,histories} -1 -lhR
 echo ""
 echo "--------------------------------------------------"
 echo ""
