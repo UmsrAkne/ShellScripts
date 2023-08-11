@@ -8,6 +8,6 @@ do
     column4=$(echo "$LINE" | cut -d , -f 4)
     column5=$(echo "$LINE" | cut -d , -f 5)
 
-magick composite -gravity northwest -geometry "+$column4+$column5" -compose over "$column3" "$column2" "union_$column1"
+magick composite -gravity northwest -geometry "+$column4+$column5" -compose over "$column3.png" "$column2.png" "union_$column1.png"
 
 done
